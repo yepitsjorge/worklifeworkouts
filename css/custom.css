@@ -10,17 +10,20 @@
         }
     }
 
-/* Lighter gray #464a56 */
-/* Darker gray #2e3037 */
+/* Colors from http://materializecss.com/color.html */
 
 .navbar {
   border-radius: 0;
-  background: #607d8b;
+  background: #37474f;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+.content {
+  background: #cfd8dc;
+}
+
 .card {
-  background: #fff;
+  background: #546e7a;
   border-radius: 1px;
   display: inline-block;
 }
