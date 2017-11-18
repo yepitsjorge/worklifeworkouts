@@ -13,7 +13,22 @@
 /* Lighter gray #464a56 */
 /* Darker gray #2e3037 */
 
-.navbar {border-radius: 0;}
+.navbar {
+  border-radius: 0;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
 
 /*.body {
   background-color: #2e3037;
