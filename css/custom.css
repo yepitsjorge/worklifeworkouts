@@ -14,16 +14,17 @@
 
 .navbar {
   border-radius: 0;
-  background: #37474f;
+  background: #66bb6a;
+  color: white;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .content {
-  background: #cfd8dc;
+  background: #fff;
 }
 
 .card {
-  background: #546e7a;
+  background: #66bb6a;
   border-radius: 1px;
   display: inline-block;
 }
