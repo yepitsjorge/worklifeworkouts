@@ -17,21 +17,7 @@
           <div class="col s9 offset-s3">
             <!-- Include all the content subpages: Testimonials, Contact, Media -->
             <div class="row">
-              <br><br><br><br>
-              <div class="col s6 offset-s3">
-                <h3 class="center-align">Worklife Workouts</h3>
-              </div>
-              <div class="col s12">
-                <div class="col s3 offset-s1 card">
-                  <p>Picture 1</p>
-                </div>
-                <div class="col s3 card">
-                  <p>Picture 2</p>
-                </div>
-                <div class="col s3 card">
-                  <p>Picture 3</p>
-                </div>
-              </div>
+              {% include home_cards.html %}
             </div>
             <div class="row" id="media">
               {% include media.html %}
