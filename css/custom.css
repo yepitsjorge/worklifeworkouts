@@ -1,29 +1,14 @@
-/* Center the navbar links */
-@media (min-width: 768px) {
-        .navbar .navbar-nav {
-            display: inline-block;
-            float: none;
-        }
-
-        .navbar .navbar-collapse {
-            text-align: center;
-        }
-    }
-
 /* Colors from http://materializecss.com/color.html */
 
 .navbar {
-  border-radius: 0;
   background: #66bb6a;
-  color: white;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .content {
   background: #fff;
 }
 
-.card {
+/*.card {
   background: #66bb6a;
   border-radius: 1px;
   display: inline-block;
@@ -31,4 +16,4 @@
 
 .card-1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
+}*/
