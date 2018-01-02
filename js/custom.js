@@ -6,3 +6,11 @@ $(".button-collapse").sideNav({
 });
 
 $('select').material_select();
+
+$('.btn-large').click(function() {
+  $(this).toggleClass('active');
+});
+
+$('.scrollspy').scrollSpy(function() {
+  $(this).toggleClass('hidden');
+});

@@ -16,23 +16,16 @@
         <div class="col s12 content">
           <div class="col s12 m9 offset-m3 l10 offset-l2">
             <!-- Include all the content subpages: Testimonials, Contact, Media -->
-            <div class="row">
+            <div class="row section scrollspy" id="welcome">
               {% include home_cards.html %}
             </div>
-            <div class="row" id="media">
+            <div class="row section scrollspy" id="media">
               {% include media.html %}
             </div>
-            <div class="row" id="packages">
+            <div class="row section scrollspy" id="packages">
               {% include packages.html %}
             </div>
-            <div class="row">
-              <div id="testimonials">
-                <div class="col s12 m4 offset-m4 l4 offset-l4">
-                  <h3 class="center-align">Testimonials</h3>
-                </div>
-              </div>
-            </div>
-            <div class="row" id="contact">
+            <div class="row section scrollspy" id="contact">
               {% include contact.html %}
             </div>
           </div>
