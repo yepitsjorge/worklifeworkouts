@@ -14,7 +14,7 @@
     <main>
       <div class="row content">
         <div class="col s12 content">
-          <div class="col s12 m9 offset-m3 l9 offset-l3">
+          <div class="col s12 m9 offset-m3 l10 offset-l2">
             <!-- Include all the content subpages: Testimonials, Contact, Media -->
             <div class="row">
               {% include home_cards.html %}
@@ -32,12 +32,8 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div id="contact">
-                <div class="col s12 m4 offset-m4 l4 offset-l4">
-                  <h3 class="center-align">Contact Me</h3>
-                </div>
-              </div>
+            <div class="row" id="contact">
+              {% include contact.html %}
             </div>
           </div>
         </div>
