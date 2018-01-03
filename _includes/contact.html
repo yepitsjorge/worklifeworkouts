@@ -1,18 +1,18 @@
 <div class="col s10 offset-s1">
   <h3 class="center">Sign Up or Contact Me</h3>
-  <form class="col s12">
+  <form class="col s12" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxeD8i5coxVAqi-FhmQZINGXmirWYfbiWT7QEuw-inh-8MwXnQ/exec">
     <div class="row">
       <!-- Buttons to select type of form to submit -->
-      <div class="col s3"><button class="waves-effect waves-light btn-large light-green lighten-1" type="button" value="Journey Package">Journey Package</button></div>
-      <div class="col s3 offset-s1"><button class="waves-effect waves-light btn-large light-green lighten-1" type="button" value="Athletic Package">Athletic Package</button></div>
-      <div class="col s3 offset-s1"><button class="waves-effect waves-light btn-large light-green lighten-1" type="button" value="Personal Training">Personal Training</button></div>
+      <div class="col s12 l3"><button class="waves-effect waves-light btn-large light-green lighten-1" type="button" name="Package" value="Journey Package">Journey Package</button></div>
+      <div class="col s12 l3 offset-l1"><button class="waves-effect waves-light btn-large light-green lighten-1" type="button" name="Package" value="Athletic Package">Athletic Package</button></div>
+      <div class="col s12 l3 offset-l2"><button class="waves-effect waves-light btn-large light-green lighten-1" type="button" name="Package" value="Personal Training">Personal Training</button></div>
     </div>
     <div class="row">
-      <div class="input-field col s12"><input id="full-name" type="text"><label for="full-name">Full Name</label></div>
+      <div class="input-field col s12"><input id="full-name" name="FullName" type="text" /><label for="full-name">Full Name</label></div>
     </div>
     <div class="row">
-      <div class="input-field col s6">
-        <select id="age">
+      <div class="input-field col s12 l6">
+        <select id="age" name="Age">
           <option value="" disabled selected>Choose One</option>
           <option value="18">18</option>
           <option value="19">19</option>
@@ -80,28 +80,32 @@
         </select>
         <label for="age">Age</label>
       </div>
-      <div class="input-field col s6">
-        <select id="gender">
+      <div class="input-field col s12 l6">
+        <select id="gender" name="Gender">
           <option value="" disabled selected>Choose One</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
+          <option value="Prefer-No-Choice">Prefer Not To Choose</option>
         </select>
         <label for="gender">Gender</label>
       </div>
     </div>
     <div class="row">
-      <div class="input-field col s12"><textarea id="past_exp" class="materialize-textarea"></textarea><label for="past_exp">Past Exercise Experience</label></div>
+      <div class="input-field col s12"><textarea id="past_exp" name="PastExp" class="materialize-textarea" placeholder="Any previous experience with weight training, cardio, yoga, etc?"></textarea><label for="past_exp">Past Exercise Experience</label></div>
     </div>
     <div class="row">
-      <div class="input-field col s12"><textarea id="goals" class="materialize-textarea"></textarea><label for="goals">Goals</label></div>
+      <div class="input-field col s12"><textarea id="goals" name="Goals" class="materialize-textarea" placeholder="What are you trying to achieve?"></textarea><label for="goals">Goals</label></div>
     </div>
     <div class="row">
       <p class="text-left">Contact Info:</p>
-      <div class="input-field col-6"><i class="material-icons prefix">email</i><input id="email" type="text"><label for="email">Email</label></div>
-      <div class="input-field col-6"><i class="material-icons prefix">phone</i><input id="phone_num" type="tel" class="validate"><label for="phone_num">Telephone</label></div>
+      <div class="input-field col s12 l6"><i class="material-icons prefix">email</i><input id="email" name="Email" type="text" /><label for="email">Email</label></div>
+      <div class="input-field col s12 l6"><i class="material-icons prefix">phone</i><input id="phone_num" name="Phone" type="tel" class="validate" /><label for="phone_num">Telephone</label></div>
     </div>
     <div class="row">
-      <div class="col s4 offset-s4"><button class="waves-effect waves-light btn-large light-green lighten-1" type="submit" value="Submit">Submit</button></div>
+      <div class="col s4 offset-s4"><button class="waves-effect waves-light btn-large light-green lighten-1" type="submit" value="Submit">Submit <i class="material-icons right">send</i></button></div>
     </div>
   </form>
+  <div style="display:none;" id="thankyou_message">
+    <h2><b>Thanks</b> for reaching out! We will get back to you soon!</h2>
+  </div>
 </div>
