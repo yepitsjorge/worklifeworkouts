@@ -11,6 +11,8 @@ $('select').material_select();
 $('.btn-large').click(function() {
   $(this).toggleClass('active');
   $(this).toggleClass('z-depth-0');
+  $(this).toggleClass('light-green lighten-1');
+  $(this).toggleClass('light-green darken-4');
 });
 
 // Make the side nav scroll spy items appear when relevant items are onscreen
