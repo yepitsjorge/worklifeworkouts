@@ -26,7 +26,8 @@ $('#top_bar').pushpin({
   // offset: 0
 });
 
-$('.pushpin-item').each(function() {
+if ($('.pushpin-item').length) {
+  $('.pushpin-item').each(function() {
     var $this = $(this);
     var $target = $('#' + $(this).attr('data-target'));
     $this.pushpin({
@@ -34,6 +35,7 @@ $('.pushpin-item').each(function() {
       bottom: $target.offset().top + $target.outerHeight() - $this.height()
     });
   });
+}
 
 // Handle form submission to Google Sheets
 function validEmail(email) { // see:
