@@ -39,8 +39,9 @@ if ($('.pushpin-item').length) {
 
 // Handle form submission to Google Sheets
 function validEmail(email) { // see:
-  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-  return re.test(email);
+  // var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+  // return re.test(email);
+  return true;
 }
 
 function validateHuman(honeypot) {
