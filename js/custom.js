@@ -154,9 +154,9 @@ $.fn.isInViewport = function() {
 
 $(window).on('resize scroll', function() {
   $('.main').each(function() {
-  	var className = $(this).attr('id')
+  	var className = $(this).attr('id');
     if ($(this).isInViewport()) {
-  	  console.log("Currently on + " className)
+  	  console.log("Currently on + " className);
       $("#main-" + className).toggleClass('active');
     } else {
       $("#main-" + className).removeClass('active');
