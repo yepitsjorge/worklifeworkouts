@@ -139,3 +139,26 @@ function loaded() {
   form.addEventListener("submit", handleFormSubmit, false);
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
+
+// Add the JS code for viewport position calculations
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  var totalHeight = $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).on('resize scroll', function() {
+  $('.main').each(function() {
+  	var className = $(this).attr('id')
+    if ($(this).isInViewport()) {
+      $("#main-" + className).toggleClass('active');
+    } else {
+      $("#main-" + className).removeClass('active');
+    }
+  });
+});
