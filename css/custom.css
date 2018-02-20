@@ -6,6 +6,7 @@
 
 .content {
   background: #fff;
+  height: 80%;
 }
 
 .side-text {
@@ -33,7 +34,6 @@ html, body, .block {
 }
 
 #youtube {
-	width: 90%;
 	margin-left: auto;
 	overflow: hidden;
 }
