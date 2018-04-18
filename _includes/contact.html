@@ -1,11 +1,19 @@
 <div class="col s10 offset-s1">
-  <h3 class="center">Sign Up or Contact Me</h3>
+  <h3 class="center">Inquire</h3>
   <form class="col s12" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxeD8i5coxVAqi-FhmQZINGXmirWYfbiWT7QEuw-inh-8MwXnQ/exec">
     <div class="row">
       <!-- Buttons to select type of form to submit -->
-      <div class="col s4 m4 l4 center-align"><input type="checkbox" class="filled-in" name="Package" id="Journey-Package" value="Journey"/><label for="Journey-Package">Journey Package</label></div>
-      <div class="col s4 m4 l4 center-align"><input type="checkbox" class="filled-in" name="Package" id="Athletic-Package" value="Athletic"/><label for="Athletic-Package">Athletic Package</label></div>
-      <div class="col s4 m4 l4 center-align"><input type="checkbox" class="filled-in" name="Package" id="Personal-Training" value="Personal"/><label for="Personal-Training">Personal Training</label></div>
+      <div class="input-field col s12">
+      	<select id="package-select" name="Package">
+      		<option value="" disabled selected>Choose One</option>
+      		<option value="Personal">Personal Training</option>
+      		<option value="Group">Group Fitness</option>
+      		<option value="Bootcamp">Bootcamp</option>
+      		<option value="Split">Split Training</option>
+      		<option value="Online">Online Programs</option>
+      	</select>
+      	<label for="package-select">Interested In:</label>
+      </div>
     </div>
     <div class="row">
       <div class="input-field col s12"><input id="full-name" name="FullName" type="text" /><label for="full-name">Full Name</label></div>
@@ -80,18 +88,6 @@
         </select>
         <label for="age">Age</label>
       </div>
-      <div class="input-field col s12 l6">
-        <select id="gender" name="Gender">
-          <option value="" disabled selected>Choose One</option>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-          <option value="Prefer-No-Choice">Prefer Not To Choose</option>
-        </select>
-        <label for="gender">Gender</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12"><textarea id="past_exp" name="PastExp" class="materialize-textarea" placeholder="Any previous experience with weight training, cardio, yoga, etc?"></textarea><label for="past_exp">Past Exercise Experience</label></div>
     </div>
     <div class="row">
       <div class="input-field col s12"><textarea id="goals" name="Goals" class="materialize-textarea" placeholder="What are you trying to achieve?"></textarea><label for="goals">Goals</label></div>
