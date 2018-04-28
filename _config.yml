@@ -8,8 +8,8 @@ version-release: April 28, 2018
 author: Jorge Murillo
 
 # URL of the site
-url: www.worklifeworkouts.com
-
+# url: www.worklifeworkouts.com
+theme: jekyll-theme-minimal
 # Where things are
 includes_dir: _includes
 layouts_dir: _layouts
