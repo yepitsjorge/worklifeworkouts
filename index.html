@@ -1,51 +1,33 @@
 ---
+layout: main
+title: Home
+permalink: home.html
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% include page_head.html %}
-  </head>
-  <body>
-    <header>
-      {% include navbar.html %}
-      {% include about_me_bar.html %}
-    </header>
-    <main>
-      <div class="row content">
-        <div class="col s12 content">
-          <div class="col s12 m10 offset-m2 l10 offset-l2">
-            <!-- Include all the content subpages: Testimonials, Contact, Media -->
-            <!-- Temporarily commenting out the Welcome Cards section. 
-            	 Keep in place until Media section is expanded sufficiently -->
+<div class="row content">
+	<div class="col s12 content">
+		<div class="col s12 m10 offset-m2 l10 offset-l2">
+			<!-- Include all the content subpages: Testimonials, Contact, Media -->
+            <!-- Temporarily commenting out the Welcome Cards section. -->
+            <!-- Keep in place until Media section is expanded sufficiently -->
             <div class="main row" data-target="welcome" id="welcome">
             </div>
             <!-- <br/><br/><br/><br/> -->
             <div class="main row" data-target="media" id="media">
-              {% include media.html %}
+            	{% include media.html %}
             </div>
             <br/><br/><br/><br/>
             <div class="main row" data-target="packages" id="packages">
-              {% include packages.html %}
+            	{% include packages.html %}
             </div>
             <br/><br/><br/><br/>
             <div class="main row" data-target="personal_training" id="personal-training">
-              {% include personal_training.html %}
+            	{% include personal_training.html %}
             </div>
             <br/><br/><br/><br/>
             <div class="main row" data-target="contact" id="contact">
-              {% include contact.html %}
+            	{% include contact.html %}
             </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="row">
-        </div>
-      </div>
-    </footer>
-    {% include page_footer.html %}
-  </body>
-</html>
+		</div>
+	</div>
+</div>

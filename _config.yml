@@ -1,1 +1,18 @@
-theme: jekyll-theme-minimal
+# name of the page
+title: Worklife Workouts
+description: Worklife Workouts Personal Training site and blog
+site-version: v0.1.0
+version-release: April 28, 2018
+
+# developer info
+author: Jorge Murillo
+
+# URL of the site
+url: www.worklifeworkouts.com
+
+# Where things are
+includes_dir: _includes
+layouts_dir: _layouts
+
+# Handling Reading
+strict_front_matter: false
