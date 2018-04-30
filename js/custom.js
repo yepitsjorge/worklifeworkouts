@@ -15,8 +15,8 @@ $('.btn-large').click(function() {
   $(this).toggleClass('light-green darken-4');
 });
 
-// Handle the YouTube carousel options
-$('.carousel').carousel();
+// Handle the carousel options
+// $('.carousel').carousel();
 
 
 // Handle form submission to Google Sheets
