@@ -16,15 +16,13 @@ $('.btn-large').click(function() {
 });
 
 // Handle YouTube and Amazon slider options
-var videos = document.querySelector('.videos');
-var options = {interval: 20000};
-var instance = M.Slider.init(videos, options);
-console.log(M.Slider.getInstance(videos));
+$(".videos").slider({
+	interval: 20000,
+});
 
-var products = document.querySelector('.products');
-var options = {interval: 10000};
-var instance = M.Slider.init(products, options);
-console.log(M.Slider.getInstance(products));
+$(".products").slider({
+	interval: 10000,
+});
 
 // Handle form submission to Google Sheets
 function validEmail(email) { // see:
