@@ -15,27 +15,9 @@ $('.btn-large').click(function() {
   $(this).toggleClass('light-green darken-4');
 });
 
-// Make the side nav scroll spy items appear when relevant items are onscreen
-$('.scrollspy').scrollSpy(
-  {target: '#top_bar'}
-);
+// Handle the YouTube carousel options
+$('.carousel').carousel();
 
-$('#top_bar').pushpin({
-  top: $('#top_bar').offset().top,
-  // bottom: 1000,
-  // offset: 0
-});
-
-if ($('.pushpin-item').length) {
-  $('.pushpin-item').each(function() {
-    var $this = $(this);
-    var $target = $('#' + $(this).attr('data-target'));
-    $this.pushpin({
-      top: $target.offset().top,
-      bottom: $target.offset().top + $target.outerHeight() - $this.height()
-    });
-  });
-}
 
 // Handle form submission to Google Sheets
 function validEmail(email) { // see:
