@@ -17,6 +17,7 @@ $('.btn-large').click(function() {
 
 // Handle the carousel options
 // $('.carousel').carousel();
+$('.slider').slider();
 
 
 // Handle form submission to Google Sheets
@@ -133,15 +134,3 @@ $.fn.isInViewport = function() {
 
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
-
-$(window).on('resize scroll', function() {
-  $('.main').each(function() {
-  	var className = $(this).attr('id');
-    if ($(this).isInViewport()) {
-  	  console.log("Currently on " + className);
-      $("#main-" + className).toggleClass('active');
-    } else {
-      $("#main-" + className).removeClass('active');
-    }
-  });
-});
