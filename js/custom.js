@@ -15,10 +15,16 @@ $('.btn-large').click(function() {
   $(this).toggleClass('light-green darken-4');
 });
 
-// Handle the carousel options
-// $('.carousel').carousel();
-$('.slider').slider();
+// Handle YouTube and Amazon slider options
+var videos = document.querySelector('.videos');
+var options = {interval: 20000};
+var instance = M.Slider.init(videos, options);
+console.log(M.Slider.getInstance(videos));
 
+var products = document.querySelector('.products');
+var options = {interval: 10000};
+var instance = M.Slider.init(products, options);
+console.log(M.Slider.getInstance(products));
 
 // Handle form submission to Google Sheets
 function validEmail(email) { // see:
